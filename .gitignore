@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# Dataset — too large for GitHub (287 MB)
+Reviews.csv
+
+# Generated files — run the notebook to create these
+*.pkl
+*.index
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+
+# Secrets
+.env
+*.key
