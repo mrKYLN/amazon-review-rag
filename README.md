@@ -1,6 +1,6 @@
-# 🛒 Amazon Review RAG — Semantic Search with LLM Summaries
+# 🛒 Amazon Review RAG - Semantic Search with LLM Summaries
 
-A full-stack NLP project that lets you search 568,000 Amazon food reviews using natural language — in **any language** — and get AI-generated summaries in Turkish.
+A full-stack NLP project that lets you search 568,000 Amazon food reviews using natural language - in **any language** - and get AI-generated summaries in Turkish.
 
 Built with FAISS vector search, sentence-transformers embeddings, Gemini LLM, and a Gradio web interface.
 
@@ -8,12 +8,12 @@ Built with FAISS vector search, sentence-transformers embeddings, Gemini LLM, an
 
 ## ✨ Features
 
-- 🔍 **Semantic search** — finds relevant reviews by meaning, not just keywords
-- 🌐 **Multilingual queries** — type in Turkish, search in English automatically
-- 🤖 **LLM summaries** — Gemini 2.5 Flash summarizes results in Turkish
-- ⭐ **Filter by rating** — narrow results to 1★–5★ reviews
-- 📦 **Filter by product** — search within a specific Amazon product ID
-- ⚡ **Fast** — FAISS cosine similarity search over 10,000 vectors in milliseconds
+- 🔍 **Semantic search** - finds relevant reviews by meaning, not just keywords
+- 🌐 **Multilingual queries** - type in Turkish, search in English automatically
+- 🤖 **LLM summaries** - Gemini 2.5 Flash summarizes results in Turkish
+- ⭐ **Filter by rating** - narrow results to 1★–5★ reviews
+- 📦 **Filter by product** - search within a specific Amazon product ID
+- ⚡ **Fast** - FAISS cosine similarity search over 10,000 vectors in milliseconds
 
 ---
 
@@ -128,10 +128,10 @@ amazon-review-rag/
 
 ## 💡 How RAG Works Here
 
-**RAG (Retrieval-Augmented Generation)** means the LLM doesn't answer from memory — it answers based on real retrieved documents.
+**RAG (Retrieval-Augmented Generation)** means the LLM doesn't answer from memory - it answers based on real retrieved documents.
 
-1. **Retrieve** — FAISS finds the most relevant reviews for your query
-2. **Augment** — those reviews are added to the LLM prompt as context
-3. **Generate** — Gemini writes a summary based only on those reviews
+1. **Retrieve** - FAISS finds the most relevant reviews for your query
+2. **Augment** - those reviews are added to the LLM prompt as context
+3. **Generate** - Gemini writes a summary based only on those reviews
 
 This makes answers grounded in real user opinions, not hallucinated.
