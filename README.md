@@ -59,7 +59,7 @@ sentence-transformers     →   384-dim vector
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/amazon-review-rag.git
+git clone https://github.com/mrKYLN/amazon-review-rag.git
 cd amazon-review-rag
 ```
 
@@ -76,7 +76,7 @@ Download `Reviews.csv` from [Kaggle](https://www.kaggle.com/datasets/snap/amazon
 
 **4. Build the index**
 
-Run all cells in `try.ipynb`. This will:
+Run all cells in `notebook.ipynb`. This will:
 - Clean and sample the data
 - Generate embeddings with `all-MiniLM-L6-v2`
 - Build and save the FAISS index (`reviews.index`, `chunks.pkl`, `metadata.pkl`)
@@ -118,7 +118,7 @@ Open `http://127.0.0.1:7860` in your browser.
 
 ```
 amazon-review-rag/
-├── try.ipynb          # Data prep, embedding, FAISS index
+├── notebook.ipynb     # Data prep, embedding, FAISS index
 ├── app.py             # Gradio web app
 ├── requirements.txt
 └── README.md
